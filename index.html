@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+  <script src="./javascript.js" defer></script>
   <div class="splash">
     <div class="logo-title">
       <div class="logo">
@@ -22,34 +23,34 @@
       <div class="form-row">
         <div class="form-element">
           <label for="first-name">FIRST NAME</label>
-          <input type="text" id="first-name" name="first-name">
+          <input type="text" id="first-name" name="first-name" required>
         </div>
         <div class="form-element">
           <label for="last-name">LAST NAME</label>
-          <input type="text" id="last-name" name="last-name">
+          <input type="text" id="last-name" name="last-name" required>
         </div>
       </div>
       <div class="form-row">
         <div class="form-element">
           <label for="email">EMAIL</label>
-          <input type="email" id="email" name="email">
+          <input type="email" id="email" name="email" required>
         </div>
         <div class="form-element">
           <label for="phone">PHONE NUMBER</label>
-          <input type="number" id="phone" name="phone">
+          <input type="number" id="phone" name="phone" required>
         </div>
       </div>
-      <div class="form-row">
+      <div class="password-row">
         <div class="form-element">
           <label for="password">PASSWORD</label>
-          <input type="password" id="password" name="password">
+          <input type="password" id="password" name="password" required>
         </div>
         <div class="form-element">
           <label for="password-confirm">CONFIRM PASSWORD</label>
-          <input type="password" id="password" name="password">
+          <input type="password" id="password-confirm" name="password-confirm" required>
         </div>
       </div>
-      <input type="button" value="Create Account">
+      <input class="submit" type="button" value="Create Account">
       <div class="login-link">
         Already have an account? <a href="">Log in</a>
       </div>
